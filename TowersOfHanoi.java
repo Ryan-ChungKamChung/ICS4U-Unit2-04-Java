@@ -40,8 +40,8 @@ final class TowersOfHanoi {
      * @throws NumberFormatException if the user input cannot be turned into
      *     an integer.
      * */
-    public static void hanoi(
-            int ring, char from_rod, char to_rod, char mid_rod) {
+    public static void hanoi(final int ring, final char fromRod,
+            final char toRod, final char midRod) {
 
         final String toRod = " to rod ";
 
@@ -68,7 +68,7 @@ final class TowersOfHanoi {
      * @throws NumberFormatException if the user input cannot be turned into
      *     an integer.
      * */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try {
             System.out.print("Choose the amount of rings: ");
 
