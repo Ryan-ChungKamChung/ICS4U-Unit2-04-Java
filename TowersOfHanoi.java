@@ -43,18 +43,18 @@ final class TowersOfHanoi {
     public static void hanoi(final int ring, final char fromRod,
             final char toRod, final char midRod) {
 
-        final String toRod = " to rod ";
+        final String toRodString = " to rod ";
 
         if (ring > 1) {
-            hanoi(ring - 1, from_rod, mid_rod, to_rod);
+            hanoi(ring - 1, fromRod, midRod, toRod);
 
             System.out.println("Move disk " + ring + " from rod "
-                    + from_rod + toRod + to_rod);
+                    + fromRod + toRodString + toRod);
 
-            hanoi(ring - 1, mid_rod, to_rod, from_rod);
+            hanoi(ring - 1, midRod, toRod, fromRod);
         } else if (ring == 1) {
             System.out.println("Move disk 1 from rod "
-                    + from_rod + toRod + to_rod);
+                    + fromRod + toRodString + toRod);
         } else {
             System.out.println("Please enter a number higher than 0.");
         }
@@ -69,6 +69,11 @@ final class TowersOfHanoi {
      *     an integer.
      * */
     public static void main(final String[] args) {
+
+        final char fromRod = "A";
+        final char toRod = "C";
+        final char midRod = "B";
+
         try {
             System.out.print("Choose the amount of rings: ");
 
@@ -80,7 +85,7 @@ final class TowersOfHanoi {
 
             System.out.print("\n");
 
-            hanoi(rings, 'A', 'C', 'B');
+            hanoi(rings, fromRod, toRod, midRod);
         } catch (NumberFormatException | IOException exception) {
             System.out.println("Please enter an integer.");
         }
