@@ -33,9 +33,9 @@ final class TowersOfHanoi {
      *
      * @param ring the amount of rings, but also the ring currently being
      *     moved.
-     * @param from_rod is the initial rod
-     * @param to_rod is the final rod
-     * @param mid_rod is the middle rod
+     * @param fromRod is the initial rod
+     * @param toRod is the final rod
+     * @param midRod is the middle rod
      * @throws IOException if there is anything wrong with the user input.
      * @throws NumberFormatException if the user input cannot be turned into
      *     an integer.
