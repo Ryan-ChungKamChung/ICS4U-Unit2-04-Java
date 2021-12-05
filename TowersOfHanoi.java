@@ -70,9 +70,9 @@ final class TowersOfHanoi {
      * */
     public static void main(final String[] args) {
 
-        final char fromRod = "A";
-        final char toRod = "C";
-        final char midRod = "B";
+        final char fromRod = 'A';
+        final char toRod = 'B';
+        final char midRod = 'C';
 
         try {
             System.out.print("Choose the amount of rings: ");
